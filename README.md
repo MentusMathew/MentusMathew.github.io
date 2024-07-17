@@ -1,43 +1,24 @@
 <html lang="en">
-
 <head>
-
-<meta charset="utf-8" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<link rel="stylesheet" href="./custom.css">
- 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./custom.css"> 
     <style>
-
     .slds-visual-picker_vertical .slds-visual-picker__figure {
-
         height: inherit !important;
-
-    }
- 
+    } 
     .runtime_appointmentbookingFlowLocation .slds-visual-picker_vertical {
-
         display: inline-flex !important;
-
     }
-
 </style>
-
 </head>
-
 <body>
-
 <div id="lexcontainer">
-
 <p>Invoke the Lightning Component specified in the Script.</p>
-
 </div>
-
+<h1>My External Page</h1>
 <script src="https://apd.myportal.hap.org/lightning/lightning.out.js"></script>
-
 <script>
-
 $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
 
     function() {                  // Callback once framework and app load
@@ -67,4 +48,3 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
 </body>
 
 </html>
- 
