@@ -18,20 +18,61 @@
 <div id="lexcontainer">
 <p>Invoke the Lightning Component specified in the Script.</p>
 </div>
-<script src="https://apd.myportal.hap.org/lightning/lightning.out.js"></script>
-<script>
-$Lightning.use("runtime_appointmentbooking:lightningOutGuest",
-    function() {                  // Callback once framework and app load
-        $Lightning.createComponent(
-            "lightning:flow",    // top-level component of your app
-            { },    // attributes to set on the component when created
-            "lexcontainer",    // the DOM location to insert the component
-            function(component) {            // API name of the Flow
-                component.startFlow("APM_Inbound_New_Guest_Appointment_Custom");
-            }
-        );
-    },    'https://apd.myportal.hap.org/'  // Site endpoint
-);
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //Or false
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+		// Settings for Field Service
+
+		embedded_svc.settings.enabledFeatures = ['FieldService'];
+		embedded_svc.settings.entryFeature = 'FieldService';
+
+		embedded_svc.settings.useCustomAuthentication = false;
+		embedded_svc.settings.loginClientId = '';
+		embedded_svc.settings.loginRedirectURL = '';
+		embedded_svc.settings.loginTargetQuerySelector = '';
+		embedded_svc.settings.authenticationStartLabel = '';
+
+		embedded_svc.init(
+			'https://haporg--apmdev.sandbox.my.salesforce.com',
+			'https://apd.myportal.hap.org/',
+			gslbBaseURL,
+			'00D6u000000Gyun',
+			'Scheduler',
+			{
+				
+			}
+		);
+	};
+
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://haporg--apmdev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
 </script>
  
 </body>
