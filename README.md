@@ -36,7 +36,6 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
     },    'https://haporg--apmdev.sandbox.my.site.com/'  // Site endpoint
 );
 </script>
-
 <script>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
@@ -99,11 +98,7 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
 	} else {
 		initESW('https://service.force.com');
 	}
-</script>
-
-    
-</script>
-
-    
+</script>    
+</script>    
 </body>
 </html>
