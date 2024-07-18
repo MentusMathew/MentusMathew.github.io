@@ -13,6 +13,7 @@
 </style>
 </head>
 <body>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <div id="lexcontainer">
 <p>Invoke the Lightning Component specified in the Script.</p>
 </div>
@@ -97,5 +98,6 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
 	} else {
 		initESW('https://service.force.com');
 	}
+	</script>
 </body>
 </html>
