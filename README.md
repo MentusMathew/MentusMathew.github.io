@@ -15,7 +15,7 @@
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <div id="lexcontainer">
-<p>Invoke the Lightning Component specified in the Script.</p>
+<p></p>
 </div>
 <script src="https://haporg--apmdev.sandbox.my.site.com/lightning/lightning.out.js"></script>
 <script>
