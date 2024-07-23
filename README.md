@@ -17,7 +17,7 @@
 <div id="lexcontainer">
 <p></p>
 </div>
-<script src="https://haporg--apmdev.sandbox.my.site.com/lightning/lightning.out.js"></script>  
+<script src="https://haporg--apmdev.sandbox.my.site.com/lightning/lightning.out.js"></script>
 <script>
    // var Str1 = window.location.href;
   var Str1 = "https://cms.hap.org/style-guide-rebuild/test-scheduler-mpers";  
