@@ -20,7 +20,7 @@
 <script src="https://haporg--apmdev.sandbox.my.site.com/lightning/lightning.out.js"></script>  
 <script>
    // var Str1 = window.location.href;
-  var Str1 = "https://cms.hap.org/style-guide-rebuild/test-scheduler-som";  
+  var Str1 = "https://cms.hap.org/style-guide-rebuild/test-scheduler-mpsers";  
    document.write(Str1 + "</br>" );
     var inputVariables = [
          { name : "inputVariables", type : "String", value: Str1 } 
