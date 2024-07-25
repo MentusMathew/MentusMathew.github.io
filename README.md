@@ -16,7 +16,9 @@
 <body>
 <div id="lexcontainer">
 </div>
-<div class="slds-text-heading_medium">Testing the files</div>
+    
+<div class="slds-box slds-theme_default">
+    
 <script src="https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/lightning/lightning.out.js"></script>  
 <script>
   var Str1 = window.location.href; 
@@ -39,6 +41,8 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
     },    'https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/'  
 );
 </script>
+
+</div>
 
 </body>
 </html>
