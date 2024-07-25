@@ -17,11 +17,10 @@
 <div id="lexcontainer">
 <p></p>
 </div>
-<script src="https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/lightning/lightning.out.js"></script>
+<script src="https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/lightning/lightning.out.js"></script>  
 <script>
-   // var Str1 = window.location.href;
-  var Str1 = "https://cms.hap.org/style-guide-rebuild/test-scheduler-mpers";  
-   document.write(Str1 + "</br>" );
+    var Str1 = window.location.href;    
+  // document.write(Str1 + "</br>" );
     var inputVariables = [
          { name : "inputVariables", type : "String", value: Str1 } 
 
@@ -37,6 +36,7 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
             }
         );
     },    'https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/'  
+);
 </script>
 
 </body>
