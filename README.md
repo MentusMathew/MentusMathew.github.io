@@ -15,8 +15,8 @@
 </head>
 <body>
 <div id="lexcontainer">
-<p></p>
 </div>
+<div class="slds-text-heading_medium">Testing the files</div>
 <script src="https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/lightning/lightning.out.js"></script>  
 <script>
   var Str1 = window.location.href; 
