@@ -17,7 +17,7 @@
 <div id="lexcontainer">
 <p></p>
 </div>
-<script src="https://haporg--apmdev.sandbox.my.site.com/lightning/lightning.out.js"></script>
+<script src="https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/lightning/lightning.out.js"></script>
 <script>
    // var Str1 = window.location.href;
   var Str1 = "https://cms.hap.org/style-guide-rebuild/test-scheduler-mpers";  
@@ -33,11 +33,10 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
             { },    // attributes to set on the component when created
             "lexcontainer",    // the DOM location to insert the component
             function(component) {            // API name of the Flow
-                component.startFlow("Soon_Inbound_Test",inputVariables); 
+                component.startFlow("Inbound_New_Guest_Appointment_Custom",inputVariables); 
             }
         );
-    },    'https://haporg--apmdev.sandbox.my.site.com/'  
-);
+    },    'https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/'  
 </script>
 
 </body>
