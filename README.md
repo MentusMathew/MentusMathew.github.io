@@ -19,28 +19,7 @@
     
 <div class="slds-box slds-theme_default">
     
-<script src="https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/lightning/lightning.out.js"></script>  
-<script>
-  var Str1 = window.location.href; 
- //   var Str1 = "https://cms.hap.org/style-guide-rebuild/test-scheduler-mpsers";    
-   document.write(Str1 + "</br>" );
-    var inputVariables = [
-         { name : "inputVariables", type : "String", value: Str1 } 
 
-       ];
-$Lightning.use("runtime_appointmentbooking:lightningOutGuest",
-    function() {                  // Callback once framework and app load
-        $Lightning.createComponent(
-            "lightning:flow",    // top-level component of your app
-            { },    // attributes to set on the component when created
-            "lexcontainer",    // the DOM location to insert the component
-            function(component) {            // API name of the Flow
-                component.startFlow("Inbound_New_Guest_Appointment_Custom",inputVariables); 
-            }
-        );
-    },    'https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/'  
-);
-</script>
 
 </div>
 <style type='text/css'>
