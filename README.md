@@ -18,7 +18,7 @@
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #FE6701;
 		font-family: "Arial", sans-serif;
-               font-size: 15 px;
+                font-size: 15 px;
 		font-weight:bold;
 		
 	}
@@ -33,7 +33,7 @@
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
