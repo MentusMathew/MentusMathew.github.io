@@ -14,13 +14,11 @@
 </style>
 </head>
 <body>
+
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #FE6701;
 		font-family: "Arial", sans-serif;
-                font-size: 15 px;
-		font-weight:bold;
-		
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #FE6701;
@@ -33,10 +31,10 @@
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
-		embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
 		// Settings for Chat
@@ -52,16 +50,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://haporg--pocmmathew.sandbox.my.salesforce.com',
-			'https://haporg--pocmmathew.sandbox.my.site.com/producers',
+			'https://haporg--apmdev.sandbox.my.salesforce.com',
+			'https://haporg--apmdev.sandbox.my.site.com/producers',
 			gslbBaseURL,
-			'00D8N000001GiHv',
+			'00D6u000000Gyun',
 			'Live_Chat',
 			{
-				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la4-c1cs-ia4.salesforceliveagent.com/content',
 				deploymentId: '5727V0000004D7Q',
 				buttonId: '5737V0000004DOe',
-				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
+				baseLiveAgentURL: 'https://d.la4-c1cs-ia4.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'Live_Chat',
 				isOfflineSupportEnabled: false
 			}
@@ -70,7 +68,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://haporg--pocmmathew.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://haporg--apmdev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
