@@ -14,14 +14,6 @@
 </style>
 </head>
 <body>
-<div id="lexcontainer">
-</div>
-    
-<div class="slds-box slds-theme_default">
-    
-
-
-</div>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #FE6701;
