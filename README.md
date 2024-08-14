@@ -24,6 +24,9 @@
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #FE6701;
 	}
+	.simplero-signup-submit label {
+  font-size: 18 px;
+}
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
