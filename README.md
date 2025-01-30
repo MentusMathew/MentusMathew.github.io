@@ -3,31 +3,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="./custom.css">
-<style>
-    .slds-visual-picker_vertical .slds-visual-picker__figure {
-        height: inherit !important;
-    }
 
-    .runtime_appointmentbookingFlowLocation .slds-visual-picker_vertical {
-        display: inline-flex !important;
-    }
-</style>
 </head>
 <body>
-
-<style type='text/css'>
-              .embeddedServiceHelpButton .helpButton .uiButton {
-                             background-color: #FE6701;
-                             font-family: "Arial", sans-serif;
-                             font-size: 20 px;font-weight:bold;
-              }
-              .embeddedServiceHelpButton .helpButton .uiButton:focus {
-                             outline: 1px solid #FE6701;
-              }
-              .simplero-signup-submit label {
-  font-size: 18 px;
-}
-</style>
 
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
