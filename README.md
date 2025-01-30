@@ -3,15 +3,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="./custom.css">
-<style>
-    .slds-visual-picker_vertical .slds-visual-picker__figure {
-        height: inherit !important;
-    }
-
-    .runtime_appointmentbookingFlowLocation .slds-visual-picker_vertical {
-        display: inline-flex !important;
-    }
-</style>
 </head>
 <body>
 <div id="lexcontainer">
