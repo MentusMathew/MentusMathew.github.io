@@ -1,23 +1,86 @@
 <html lang="en">
-<body>
-<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="./custom.css">
+<style>
+    .slds-visual-picker_vertical .slds-visual-picker__figure {
+        height: inherit !important;
+    }
 
-			embeddedservice_bootstrap.init(
-				'00Ddl000001XOKj',
-				'Live_Chat_Embedded_Deployment',
-				'https://haporg--devmerge.sandbox.my.site.com/ESWLiveChatEmbeddedDep1738126593973',
-				{
-					scrt2URL: 'https://haporg--devmerge.sandbox.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
+    .runtime_appointmentbookingFlowLocation .slds-visual-picker_vertical {
+        display: inline-flex !important;
+    }
+</style>
+</head>
+<body>
+
+<style type='text/css'>
+              .embeddedServiceHelpButton .helpButton .uiButton {
+                             background-color: #FE6701;
+                             font-family: "Arial", sans-serif;
+                             font-size: 20 px;font-weight:bold;
+              }
+              .embeddedServiceHelpButton .helpButton .uiButton:focus {
+                             outline: 1px solid #FE6701;
+              }
+              .simplero-signup-submit label {
+  font-size: 18 px;
+}
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+              var initESW = function(gslbBaseURL) {
+                             embedded_svc.settings.displayHelpButton = true; //Or false
+                             embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+                             //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+                             //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+                             //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+                             //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+                             // Settings for Chat
+                             //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+                                           // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+                                           // Returns a valid button ID.
+                             //};
+                             //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+                             //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+                             //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+                             embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+                             embedded_svc.settings.entryFeature = 'LiveAgent';
+
+                             embedded_svc.init(
+                                           'https://haporg--apmdev.sandbox.my.salesforce.com',
+                                           'https://haporg--apmdev.sandbox.my.site.com/producers',
+                                           gslbBaseURL,
+                                           '00D6u000000Gyun',
+                                           'Live_Chat',
+                                           {
+                                                          baseLiveAgentContentURL: 'https://c.la4-c1cs-ia4.salesforceliveagent.com/content',
+                                                          deploymentId: '5727V0000004D7Q',
+                                                          buttonId: '5737V0000004DOe',
+                                                          baseLiveAgentURL: 'https://d.la4-c1cs-ia4.salesforceliveagent.com/chat',
+                                                          eswLiveAgentDevName: 'Live_Chat',
+                                                          isOfflineSupportEnabled: false
+                                           }
+                             );
+              };
+
+              if (!window.embedded_svc) {
+                             var s = document.createElement('script');
+                             s.setAttribute('src', 'https://haporg--apmdev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+                             s.onload = function() {
+                                           initESW(null);
+                             };
+                             document.body.appendChild(s);
+              } else {
+                             initESW('https://service.force.com');
+              }
 </script>
-<script type='text/javascript' src='https://haporg--devmerge.sandbox.my.site.com/ESWLiveChatEmbeddedDep1738126593973/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 </body>
 </html>
