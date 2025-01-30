@@ -16,27 +16,6 @@
 <body>
 <div id="lexcontainer">
 </div>
-<script src="https://haporg--devmerge.sandbox.my.site.com/scheduleappointment/lightning/lightning.out.js"></script>  
-<script>
-    var Str1 = window.location.href;    
-  // document.write(Str1 + "</br>" );
-    var inputVariables = [
-         { name : "inputVariables", type : "String", value: Str1 } 
-
-       ];
-$Lightning.use("runtime_appointmentbooking:lightningOutGuest",
-    function() {                  // Callback once framework and app load
-        $Lightning.createComponent(
-            "lightning:flow",    // top-level component of your app
-            { },    // attributes to set on the component when created
-            "lexcontainer",    // the DOM location to insert the component
-            function(component) {            // API name of the Flow
-                component.startFlow("Inbound_New_Guest_Appointment_Custom",inputVariables); 
-            }
-        );
-    },    'https://haporg--devmerge.sandbox.my.site.com/scheduleappointment/'  
-);
-</script>
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
@@ -57,6 +36,5 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
 </script>
 <script type='text/javascript' src='https://haporg--devmerge.sandbox.my.site.com/ESWLiveChatEmbeddedDep1738126593973/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'>
 </script>
-
 </body>
 </html>
