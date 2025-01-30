@@ -16,6 +16,8 @@
 <body>
 <div id="lexcontainer">
 </div>
+<div class="row"><div class="component plain-html col-12">
+    <div class="component-content">
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
@@ -36,5 +38,7 @@
 </script>
 <script type='text/javascript' src='https://haporg--devmerge.sandbox.my.site.com/ESWLiveChatEmbeddedDep1738126593973/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'>
 </script>
+</div></div>
+        </div>
 </body>
 </html>
