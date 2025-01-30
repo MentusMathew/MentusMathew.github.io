@@ -1,5 +1,5 @@
 <html lang="en">
-<head>
+<body>
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
