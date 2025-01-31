@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="./custom.css">
 </head>
 <body>
-  <h1>TEST</h1>
   <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #0081A1;
