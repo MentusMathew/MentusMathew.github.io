@@ -6,6 +6,26 @@
 </head>
 <body>
   <h1>TEST</h1>
+  <style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #0081A1;
+		font-family: "Chivo", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #0081A1;
+	}
+
+        .slds-icon-utility-minimize-window{
+    		zoom: 120%;
+	 }       
+    	 .slds-icon-utility-close{
+          	zoom: 120%;
+     	  }
+    
+    	 .slds-form-element__label{
+        	font-size:1.5ch;
+       	}
+</style>
 <script type='text/javascript'>
               function initEmbeddedMessaging() {
                              try {
