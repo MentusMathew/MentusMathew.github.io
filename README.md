@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="./custom.css">
 </head>
 <body>
+  <h1>TEST</h1>
 <script type='text/javascript'>
               function initEmbeddedMessaging() {
                              try {
